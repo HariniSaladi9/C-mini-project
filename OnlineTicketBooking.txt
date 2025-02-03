@@ -1,0 +1,150 @@
+//C program for online ticket booking
+#include<stdio.h>
+
+int main()
+{
+    int choice;int quantity;int a[10]={2,10,15,30,40,49,54};int number;int price;
+    printf("welcome to online movie tickets booking system");
+    printf("The available movies are:");
+    printf("1.Pushpa\n");
+    printf("2.Prema Kavali\n");
+    printf("3.Ishq\n");
+    printf("4.Devara\n");
+    printf("5.Exit\n");
+    while(1){
+    printf("Enter your choice:\n");
+    scanf("%d",&choice);
+    if(choice==5){
+        printf("Tickets are reserved\n");
+        break;
+    }
+    printf("Enter the quantity\n:");
+    scanf("%d",&quantity);
+    if(choice==1)
+    {
+        int gold,diamond,platinum;
+        printf("Enter the seat number:\n");
+        scanf("%d",&number);
+        if((number>1)&&(number<20))
+        {
+            printf("The seats are booked in gold class\n");
+            price+=80*quantity;
+        }
+        else if((number>20)&&(number<40))
+        {
+            printf("The seats are booked in diamond class\n");
+             price+=120*quantity;
+        }
+        else if((number>40)&&(number<60))
+        {
+            printf("The seats are booked in platinum\n");
+             price+=200*quantity;
+        }
+        else
+        {
+            printf("Invalid number\n");
+        }
+    }
+    else if(choice==1)
+    {
+        int gold,diamond,platinum;
+        printf("Enter the seat number:\n");
+        scanf("%d",&number);
+        
+        if((number>1)&&(number<20))
+        {
+            printf("The seats are booked in gold class\n");
+             price+=80*quantity;
+        }
+        else if((number>20)&&(number<40))
+        {
+            printf("The seats are booked in diamond class\n");
+             price+=120*quantity;
+         }
+        else if((number>40)&&(number<60))
+        {
+            printf("The seats are booked in platinum\n");
+             price+=200*quantity;
+         }
+        else
+        {
+            printf("Invalid number\n");
+        }
+    }
+    else if(choice==3)
+    {
+        int gold,diamond,platinum;
+        printf("Enter the seat number:\n");
+        scanf("%d",&number);
+        
+        if((number>1)&&(number<20))
+        {
+            printf("The seats are booked in gold class\n");
+             price+=80*quantity;
+        }
+        else if((number>20)&&(number<40))
+        {
+            printf("The seats are booked in diamond class\n");
+             price+=120*quantity;
+         }
+        else if((number>40)&&(number<60))
+        {
+            printf("The seats are booked in platinum\n");
+             price+=200*quantity;
+         }
+        else
+        {
+            printf("Invalid number\n");
+        }
+    }
+    else if(choice==4)
+    {
+        int gold,diamond,platinum;
+        printf("Enter the seat number:\n");
+        scanf("%d",&number);
+        
+        if((number>1)&&(number<20))
+        {
+            printf("The seats are booked in gold class\n");
+             price+=80*quantity;
+         }
+        else if((number>20)&&(number<40))
+        {
+            printf("The seats are booked in diamond class\n");
+             price+=120*quantity;
+         }
+        else if((number>40)&&(number<60))
+        {
+            printf("The seats are booked in platinum\n");
+             price+=200*quantity;
+         }
+        else
+        {
+            printf("Invalid number\n");
+        }1
+    }
+    }
+    printf("The price of the tickets are the:%d",price);
+}
+
+Output
+
+welcome to online movie tickets booking system
+The available movies are:
+1.Pushpa
+2.Prema Kavali
+3.Ishq
+4.Devara
+5.Exit
+Enter your choice: 2
+Enter the quantity: 1
+Enter the seat number: 66
+Invalid number
+Enter your choice: 1
+Enter the quantity: 2
+Enter the seat number: 45
+The seats are booked in platinum
+Enter your choice: 5
+Tickets are reserved
+The price of the tickets are the: 400
+
